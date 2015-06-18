@@ -134,7 +134,7 @@ class XmlseclibsAdapter implements AdapterInterface
             )
         );
         $objKey->loadKey($this->privateKey);
-
+var_dump($this->privateKey);
         $objXMLSecDSig = new XMLSecurityDSig();
         $objXMLSecDSig->setCanonicalMethod($this->canonicalMethod);
         $objXMLSecDSig->addReference($data, $this->digestAlgorithm, $this->transforms, array('force_uri' => true));
@@ -142,7 +142,7 @@ class XmlseclibsAdapter implements AdapterInterface
 
         /* Add associated public key */
         if ($this->getPublicKey()) {
-            $objXMLSecDSig->add509Cert($this->getPublicKey(), true, false, null, $objKey);
+            $objXMLSecDSig->add509Cert($this->getPublicKey(), true, false, null, $this->privateKey);
         }
     }
 
