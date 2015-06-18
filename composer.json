@@ -20,7 +20,7 @@
         {
             "type": "vcs",
             "url": "https://github.com/remoteando/xmlseclibs"
-        },
+        }
     },
     "require": {
         "remoteando/xmlseclibs": "^1.3"
