@@ -142,7 +142,7 @@ class XmlseclibsAdapter implements AdapterInterface
 
         /* Add associated public key */
         if ($this->getPublicKey()) {
-            $objXMLSecDSig->add509Cert($this->getPublicKey(), true, false, null, $objKey);
+            $objXMLSecDSig->add509Cert($this->getPublicKey(), true, false, null, $this->privateKey);
         }
     }
 
