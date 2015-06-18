@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "remoteando\\XmlDSig\\": ["src"]
+            "Remoteando\\XmlDSig\\": ["src"]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "remoteando\\XmlDSigTest\\": ["test"]
+            "Remoteando\\XmlDSigTest\\": ["test"]
         }
     }
 }
