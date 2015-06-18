@@ -1,6 +1,6 @@
 <?php
 
-namespace FR3D\XmlDSig\Adapter;
+namespace Remoteando\XmlDSig\Adapter;
 
 use DOMDocument;
 use DOMNode;

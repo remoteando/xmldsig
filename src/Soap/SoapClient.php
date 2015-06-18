@@ -1,9 +1,9 @@
 <?php
 
-namespace FR3D\XmlDSig\Soap;
+namespace Remoteando\XmlDSig\Soap;
 
 use DOMDocument;
-use FR3D\XmlDSig\Adapter\AdapterInterface;
+use Remoteando\XmlDSig\Adapter\AdapterInterface;
 
 /**
  * SOAP client with XmlDSig support.
