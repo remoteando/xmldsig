@@ -1,8 +1,8 @@
 <?php
 
-namespace FR3D\XmlDSigTest\Adapter;
+namespace Remoteando\XmlDSigTest\Adapter;
 
-use FR3D\XmlDSig\Adapter\XmlseclibsAdapter;
+use Remoteando\XmlDSig\Adapter\XmlseclibsAdapter;
 
 /**
  * Test suite for Xmlseclibs adapter.

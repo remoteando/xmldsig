@@ -1,10 +1,10 @@
 <?php
 
-namespace FR3D\XmlDSigTest\Adapter;
+namespace Remoteando\XmlDSigTest\Adapter;
 
 use DOMDocument;
 use DOMXPath;
-use FR3D\XmlDSig\Adapter\AdapterInterface;
+use Remoteando\XmlDSig\Adapter\AdapterInterface;
 
 /**
  * Common test for all XmlDSig adapters.

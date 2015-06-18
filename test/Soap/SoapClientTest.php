@@ -1,10 +1,10 @@
 <?php
 
-namespace FR3D\XmlDSigTest\Soap;
+namespace Remoteando\XmlDSigTest\Soap;
 
 use DOMDocument;
-use FR3D\XmlDSig\Adapter\XmlseclibsAdapter;
-use FR3D\XmlDSig\Soap\SoapClient;
+use Remoteando\XmlDSig\Adapter\XmlseclibsAdapter;
+use Remoteando\XmlDSig\Soap\SoapClient;
 
 /**
  * Test suite for SoapClient.
