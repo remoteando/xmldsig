@@ -137,12 +137,13 @@ class XmlseclibsAdapter implements AdapterInterface
         $objXMLSecDSig = new XMLSecurityDSig();
         $objXMLSecDSig->setCanonicalMethod($this->canonicalMethod);
         $objXMLSecDSig->addReference($data, $this->digestAlgorithm, $this->transforms, array('force_uri' => true));
-        $objXMLSecDSig->sign($objKey, $data->documentElement);
-
+        
         /* Add associated public key */
         if ($this->getPublicKey()) {
             $objXMLSecDSig->add509Cert($this->getPublicKey(), true, false, null, $this->privateKey);
         }
+        $objXMLSecDSig->sign($objKey, $data->documentElement);
+
     }
 
     public function verify(DOMDocument $data)
